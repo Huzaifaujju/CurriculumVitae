@@ -111,9 +111,27 @@
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-bottom: 2rem;
+      font-size: 0.95rem;
+      color: #555;
+      padding: 2rem 1rem;
+      background: #f1f2f6;
+    }
+
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 0.6rem;
+      display: inline-block;
+      color: var(--primary);
+      font-size: 1.3rem;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: var(--accent);
     }
 
     @media (max-width: 600px) {
@@ -125,6 +143,7 @@
       }
     }
   </style>
+  <script src="https://kit.fontawesome.com/4faebc42e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -178,6 +197,10 @@
   </main>
 
   <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/mohammehuzaifa-0924a9262" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:ujju8088@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
     &copy; 2025 Mohammed Huzaifa. All rights reserved.
   </footer>
 </body>

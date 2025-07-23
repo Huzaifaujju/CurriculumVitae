@@ -30,21 +30,30 @@
     header {
       background: linear-gradient(to right, var(--primary), var(--accent));
       color: white;
-      padding: 3rem 2rem 2rem;
-      position: relative;
       text-align: center;
+      padding: 4rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
     }
 
     .btn-download {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+      display: inline-block;
       background: white;
       color: var(--primary);
       padding: 0.6rem 1.4rem;
       border-radius: 25px;
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 1rem;
       text-decoration: none;
       border: 2px solid white;
       transition: background 0.3s ease, color 0.3s ease;
@@ -55,17 +64,6 @@
       color: white;
     }
 
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.3rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      font-weight: 400;
-    }
-
     .container {
       max-width: 900px;
       margin: auto;
@@ -73,7 +71,7 @@
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
 
     h2 {
@@ -84,25 +82,18 @@
       padding-left: 10px;
     }
 
-    p {
-      font-size: 1.05rem;
-      margin-bottom: 1rem;
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
 
-    .highlights {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .highlight-item {
+    ul li {
       background: white;
-      padding: 1rem 1.2rem;
       border-left: 5px solid var(--accent);
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      flex: 1 1 260px;
-      font-weight: 500;
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0.8rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
 
     footer {
@@ -114,7 +105,7 @@
     }
 
     .social-icons {
-      margin: 1rem 0;
+      margin-top: 1rem;
     }
 
     .social-icons a {
@@ -134,61 +125,57 @@
       header h1 {
         font-size: 2rem;
       }
-
-      .btn-download {
-        position: static;
-        display: block;
-        margin: 1rem auto 0;
-      }
-
-      .highlights {
-        flex-direction: column;
+      .container {
+        padding: 2rem 1rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <a class="btn-download" href="resume.pdf" download>📄 Download Resume</a>
     <h1>Mohammed Huzaifa</h1>
     <p>IT Application Support Specialist</p>
+    <a class="btn-download" href="resume.pdf" download>📄 Download Resume</a>
   </header>
 
   <main class="container">
     <section>
       <h2>About Me</h2>
       <p>
-        I’m an IT professional with experience in application support, cloud hosting, and learning management systems. 
-        I’ve worked with AWS EC2, configured Moodle LMS, and provided IT solutions at educational and commercial organizations. 
-        I'm passionate about solving real-world problems using technology and enjoy mentoring others in STEM fields.
+        I’m a passionate IT support specialist with experience in cloud systems, AWS hosting, and LMS administration. 
+        I’ve worked with academic institutions and technical platforms to deploy and manage e-learning systems, troubleshoot network issues, 
+        and support end-users with clear communication and fast response.
       </p>
     </section>
 
     <section>
       <h2>Highlights</h2>
-      <div class="highlights">
-        <div class="highlight-item">✅ AWS EC2 Hosting & Monitoring</div>
-        <div class="highlight-item">✅ Moodle LMS Administration</div>
-        <div class="highlight-item">✅ IT Support – EIF Internship</div>
-        <div class="highlight-item">✅ STEM Trainer – Robotics/IoT</div>
-        <div class="highlight-item">✅ Python, Arduino, Raspberry Pi</div>
-        <div class="highlight-item">✅ Fast Learner & Problem Solver</div>
+      <ul>
+        <li>✅ AWS EC2 Hosting & Monitoring (Internship at EIF)</li>
+        <li>✅ Moodle LMS Setup, Course Management, Backup Handling</li>
+        <li>✅ Experience with IoT, Arduino, and Python (Tkinter)</li>
+        <li>✅ Conducted STEM & Robotics Training Workshops</li>
+        <li>✅ Provided IT & Quality Support for Business Operations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mohammehuzaifa-0924a9262" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:ujju8088@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/+971552957607" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/mohammehuzaifa-0924a9262" target="_blank" title="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="mailto:ujju8088@gmail.com" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://wa.me/+971552957607" target="_blank" title="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
     &copy; 2025 Mohammed Huzaifa. All rights reserved.
   </footer>
 </body>

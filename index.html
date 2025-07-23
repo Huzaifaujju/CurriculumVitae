@@ -31,37 +31,18 @@
       background: linear-gradient(to right, var(--primary), var(--accent));
       color: white;
       text-align: center;
-      padding: 4rem 2rem 2rem;
+      padding: 5rem 2rem 4rem;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
       font-weight: 700;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 400;
-      margin-bottom: 1rem;
-    }
-
-    .btn-download {
-      display: inline-block;
-      background: white;
-      color: var(--primary);
-      padding: 0.6rem 1.4rem;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      border: 2px solid white;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-download:hover {
-      background: var(--accent);
-      color: white;
     }
 
     .container {
@@ -71,15 +52,20 @@
     }
 
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
     h2 {
       color: var(--primary);
-      font-size: 1.6rem;
+      font-size: 1.7rem;
       margin-bottom: 1rem;
       border-left: 4px solid var(--accent);
       padding-left: 10px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
     }
 
     ul {
@@ -90,10 +76,38 @@
     ul li {
       background: white;
       border-left: 5px solid var(--accent);
-      padding: 0.8rem 1.2rem;
-      margin-bottom: 0.8rem;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
       border-radius: 5px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    ul li strong {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    ul li span {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: #065a9c;
     }
 
     footer {
@@ -105,7 +119,7 @@
     }
 
     .social-icons {
-      margin-top: 1rem;
+      margin: 1rem 0;
     }
 
     .social-icons a {
@@ -135,47 +149,94 @@
   <header>
     <h1>Mohammed Huzaifa</h1>
     <p>IT Application Support Specialist</p>
-    <a class="btn-download" href="resume.pdf" download>📄 Download Resume</a>
   </header>
 
   <main class="container">
     <section>
-      <h2>About Me</h2>
+      <h2>Professional Summary</h2>
       <p>
-        I’m a passionate IT support specialist with experience in cloud systems, AWS hosting, and LMS administration. 
-        I’ve worked with academic institutions and technical platforms to deploy and manage e-learning systems, troubleshoot network issues, 
-        and support end-users with clear communication and fast response.
+        Detail-oriented IT graduate with experience in application support, AWS hosting, and Moodle LMS administration. Skilled in cloud systems, troubleshooting, and user support. Passionate about delivering reliable IT services in a dynamic environment.
       </p>
     </section>
 
     <section>
-      <h2>Highlights</h2>
+      <h2>Experience</h2>
       <ul>
-        <li>✅ AWS EC2 Hosting & Monitoring (Internship at EIF)</li>
-        <li>✅ Moodle LMS Setup, Course Management, Backup Handling</li>
-        <li>✅ Experience with IoT, Arduino, and Python (Tkinter)</li>
-        <li>✅ Conducted STEM & Robotics Training Workshops</li>
-        <li>✅ Provided IT & Quality Support for Business Operations</li>
+        <li>
+          <strong>IT Intern – Emirates Institute of Finance (EIF)</strong><br />
+          <span>Sharjah, 2025</span>
+          <p>
+            • Managed Moodle LMS portal including course creation, backups, and user roles<br/>
+            • Deployed and monitored AWS EC2 servers for e-learning<br/>
+            • Provided IT support for academic staff and maintained system documentation
+          </p>
+        </li>
+        <li>
+          <strong>STEM Trainer – Junkbot Robotics</strong><br />
+          <span>Sharjah, Dec 2023</span>
+          <p>
+            • Conducted Arduino and IoT training sessions<br/>
+            • Developed hands-on learning modules and guided student projects
+          </p>
+        </li>
+        <li>
+          <strong>IT Support Assistant – Du Telecom (Alo Wifi)</strong><br />
+          <span>Sharjah, Dec 2023</span>
+          <p>
+            • Installed and troubleshot routers and client-side devices<br/>
+            • Assisted in technical support for networking systems
+          </p>
+        </li>
+        <li>
+          <strong>IT & Quality Associate – Al Falaj Perfumes Industry LLC</strong><br />
+          <span>Sharjah</span>
+          <p>
+            • Provided internal tech support and handled system setups<br/>
+            • Maintained quality records and troubleshooting logs
+          </p>
+        </li>
       </ul>
     </section>
 
     <section>
-      <h2>Contact</h2>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/mohammehuzaifa-0924a9262" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:ujju8088@gmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://wa.me/+971552957607" target="_blank" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>✅ Application Support & Troubleshooting</li>
+        <li>✅ Moodle LMS Configuration & Administration</li>
+        <li>✅ AWS EC2 Hosting & Monitoring</li>
+        <li>✅ Networking & System Maintenance</li>
+        <li>✅ Arduino & IoT Integration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>✅ Clear Communication</li>
+        <li>✅ Fast Learner & Adaptable</li>
+        <li>✅ Analytical Thinking</li>
+        <li>✅ Team Collaboration</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Resume</h2>
+      <a class="btn-download" href="resume.pdf" download>📄 Download My Resume</a>
     </section>
   </main>
 
   <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/mohammehuzaifa-0924a9262" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:ujju8088@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/+971552957607" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
     &copy; 2025 Mohammed Huzaifa. All rights reserved.
   </footer>
 </body>

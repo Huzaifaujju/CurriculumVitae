@@ -30,13 +30,34 @@
     header {
       background: linear-gradient(to right, var(--primary), var(--accent));
       color: white;
+      padding: 3rem 2rem 2rem;
+      position: relative;
       text-align: center;
-      padding: 5rem 2rem 4rem;
+    }
+
+    .btn-download {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: white;
+      color: var(--primary);
+      padding: 0.6rem 1.4rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: 2px solid white;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background: var(--accent);
+      color: white;
     }
 
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
       font-weight: 700;
     }
 
@@ -57,7 +78,7 @@
 
     h2 {
       color: var(--primary);
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       margin-bottom: 1rem;
       border-left: 4px solid var(--accent);
       padding-left: 10px;
@@ -68,46 +89,20 @@
       margin-bottom: 1rem;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
-    ul li {
+    .highlight-item {
       background: white;
-      border-left: 5px solid var(--accent);
       padding: 1rem 1.2rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    ul li strong {
-      color: var(--primary);
-      font-size: 1.1rem;
-    }
-
-    ul li span {
-      font-style: italic;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .btn-download {
-      display: inline-block;
-      margin-top: 1rem;
-      background: var(--accent);
-      color: white;
-      padding: 0.8rem 1.8rem;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .btn-download:hover {
-      background: #065a9c;
+      border-left: 5px solid var(--accent);
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      flex: 1 1 260px;
+      font-weight: 500;
     }
 
     footer {
@@ -139,89 +134,46 @@
       header h1 {
         font-size: 2rem;
       }
-      .container {
-        padding: 2rem 1rem;
+
+      .btn-download {
+        position: static;
+        display: block;
+        margin: 1rem auto 0;
+      }
+
+      .highlights {
+        flex-direction: column;
       }
     }
   </style>
 </head>
 <body>
   <header>
+    <a class="btn-download" href="resume.pdf" download>📄 Download Resume</a>
     <h1>Mohammed Huzaifa</h1>
     <p>IT Application Support Specialist</p>
   </header>
 
   <main class="container">
     <section>
-      <h2>Professional Summary</h2>
+      <h2>About Me</h2>
       <p>
-        Detail-oriented IT graduate with experience in application support, AWS hosting, and Moodle LMS administration. Skilled in cloud systems, troubleshooting, and user support. Passionate about delivering reliable IT services in a dynamic environment.
+        I’m an IT professional with experience in application support, cloud hosting, and learning management systems. 
+        I’ve worked with AWS EC2, configured Moodle LMS, and provided IT solutions at educational and commercial organizations. 
+        I'm passionate about solving real-world problems using technology and enjoy mentoring others in STEM fields.
       </p>
     </section>
 
     <section>
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>IT Intern – Emirates Institute of Finance (EIF)</strong><br />
-          <span>Sharjah, 2025</span>
-          <p>
-            • Managed Moodle LMS portal including course creation, backups, and user roles<br/>
-            • Deployed and monitored AWS EC2 servers for e-learning<br/>
-            • Provided IT support for academic staff and maintained system documentation
-          </p>
-        </li>
-        <li>
-          <strong>STEM Trainer – Junkbot Robotics</strong><br />
-          <span>Sharjah, Dec 2023</span>
-          <p>
-            • Conducted Arduino and IoT training sessions<br/>
-            • Developed hands-on learning modules and guided student projects
-          </p>
-        </li>
-        <li>
-          <strong>IT Support Assistant – Du Telecom (Alo Wifi)</strong><br />
-          <span>Sharjah, Dec 2023</span>
-          <p>
-            • Installed and troubleshot routers and client-side devices<br/>
-            • Assisted in technical support for networking systems
-          </p>
-        </li>
-        <li>
-          <strong>IT & Quality Associate – Al Falaj Perfumes Industry LLC</strong><br />
-          <span>Sharjah</span>
-          <p>
-            • Provided internal tech support and handled system setups<br/>
-            • Maintained quality records and troubleshooting logs
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>✅ Application Support & Troubleshooting</li>
-        <li>✅ Moodle LMS Configuration & Administration</li>
-        <li>✅ AWS EC2 Hosting & Monitoring</li>
-        <li>✅ Networking & System Maintenance</li>
-        <li>✅ Arduino & IoT Integration</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Soft Skills</h2>
-      <ul>
-        <li>✅ Clear Communication</li>
-        <li>✅ Fast Learner & Adaptable</li>
-        <li>✅ Analytical Thinking</li>
-        <li>✅ Team Collaboration</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Resume</h2>
-      <a class="btn-download" href="resume.pdf" download>📄 Download My Resume</a>
+      <h2>Highlights</h2>
+      <div class="highlights">
+        <div class="highlight-item">✅ AWS EC2 Hosting & Monitoring</div>
+        <div class="highlight-item">✅ Moodle LMS Administration</div>
+        <div class="highlight-item">✅ IT Support – EIF Internship</div>
+        <div class="highlight-item">✅ STEM Trainer – Robotics/IoT</div>
+        <div class="highlight-item">✅ Python, Arduino, Raspberry Pi</div>
+        <div class="highlight-item">✅ Fast Learner & Problem Solver</div>
+      </div>
     </section>
   </main>
 
